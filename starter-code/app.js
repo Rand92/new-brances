@@ -43,7 +43,6 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   let sum3 =sum(a,b)[0];
   let totalSum =sum(sum3,c)[0];
- 
  let multi3 =multiply(a,b)[0];
  let totalMulti =multiply(multi3,c)[0];
 
