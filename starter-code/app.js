@@ -23,8 +23,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+problem-2
+let totalMult = a*b ;
+return [totalMult ,`The product of ${a} and ${b} is ${totalMult}.`];
+
   let totalMult = a * b;
   return [totalMult, `The product of ${a} and ${b} is ${totalMult}.`];
+ main
 }
 
 // Here is the test for multiply(); uncomment it to run it
