@@ -23,8 +23,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+problem-2
 let totalMult = a*b ;
 return [totalMult ,`The product of ${a} and ${b} is ${totalMult}.`];
+
+  let totalMult = a * b;
+  return [totalMult, `The product of ${a} and ${b} is ${totalMult}.`];
+
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -39,6 +44,7 @@ Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
+
 
 
 // Write your code here
@@ -56,6 +62,17 @@ return [totalSum, totalMulti, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
+// Write your code here
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let sum = a + b + c;
+  let product = a * b * c
+  return [sum, product, `${a} and ${b} and ${c} sum to ${sum}.`, `The product of ${a} and ${b} and ${c} is ${product}.`];
+}
+
+// Here is the test for sumAndMultiply(); uncomment it to run it
+testSumAndMultiply(4, 7, 5);
+ main
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -72,6 +89,7 @@ Test this function by hand in the console to get it working, and wh
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 
+
 function sumArray(sumArr) { //eslint-disable-line
 
 
@@ -85,6 +103,18 @@ function sumArray(sumArr) { //eslint-disable-line
 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+
+// Write your code here
+let testArray = [2, 3, 4]; //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
+let sum0= sum(sumArr[0],sumArr[1])[0];
+let sum1 =sum(sum0,sumArr[2])[0] ;
+  return [sum1 , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum1} is their sum.`];
+} 
+// Here is the test for sumArray(); uncomment it to run it
+
+testSumArray(testArray);
+
 
 
 /////////////////////////////////////
@@ -100,6 +130,17 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 
 }
+
+
+// Write your code here
+function multiplyArray(multArr) { //eslint-disable-line
+  let multi5 = multiply(multArr[0], multArr[1])[0]
+  let totalMultiply = multiply(multi5, multArr[2])[0]
+return [totalMultiply ,`The numbers 2,3,4 have a product of 24.`] ;
+}
+
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyArray(testArray);
 
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -124,6 +165,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 
+
 // Write your code here
 let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
@@ -133,6 +175,18 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
 }
 
+// // Write your code here
+let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+let myltiply6 =1
+for (let i=0;i<dynamicArray.length;i++) {
+  myltiply6=multiply(myltiply6,dynamicArray[i])[0];
+}
+return [myltiply6 ,`The numbers ${testDynamicArray} have a product of ${myltiply6}.`];
+}
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyAnyArray(testDynamicArray);
+ 
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
