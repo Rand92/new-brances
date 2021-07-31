@@ -62,13 +62,17 @@ return [totalSum, totalMulti, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
-// Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let sum = a + b + c;
-  let product = a * b * c
-  return [sum, product, `${a} and ${b} and ${c} sum to ${sum}.`, `The product of ${a} and ${b} and ${c} is ${product}.`];
-}
+/ Write your code here
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let sum3 =sum(a,b)[0];
+  let totalSum =sum(sum3,c)[0];
 
+ let multi3 =multiply(a,b)[0];
+ let totalMulti =multiply(multi3,c)[0];
+
+return [totalSum, totalMulti, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The product of ${a} and ${b} and ${c} is ${totalMulti}.`];
+
+ }
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4, 7, 5);
  main
@@ -194,3 +198,4 @@ testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
 // © 2021 GitHub, Inc.
+
