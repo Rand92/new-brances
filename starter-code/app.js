@@ -41,11 +41,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let sum55 = sum(a,b,c)[0];
-  let product = multiply(a,b,c)[0];
- 
-  return [sum55, product,`4 and 7 and 5 sum to 16.`,`The product of 4 and 7 and 5 is 140.`];
+  let sum = a + b + c;
+  let product = a * b * c
+  return [sum, product, `${a} and ${b} and ${c} sum to ${sum}.`, `The product of ${a} and ${b} and ${c} is ${product}.`];
 }
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4, 7, 5);
 
@@ -103,14 +103,16 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // // Write your code here
-// let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
-
-// function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-// }
-// }
-
+let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+let myltiply6 =1
+for (let i=0;i<dynamicArray.length;i++) {
+  myltiply6=multiply(myltiply6,dynamicArray[i])[0];
+}
+return [myltiply6 ,`The numbers ${testDynamicArray} have a product of ${myltiply6}.`];
+}
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
 // © 2021 GitHub, Inc.
