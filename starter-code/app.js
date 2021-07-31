@@ -46,6 +46,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * i
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 
+// Write your code here
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let sum3 =sum(a,b)[0];
+  let totalSum =sum(sum3,c)[0];
+
+ let multi3 =multiply(a,b)[0];
+ let totalMulti =multiply(multi3,c)[0];
+
+//  return [totalSum, totalMulti, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The product of ${a} and ${b} and ${c} is ${totalMulti}.`];
+return [totalSum, totalMulti, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The product of ${a} and ${b} and ${c} is ${totalMulti}.`];
+
+
+
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
@@ -71,6 +84,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
  let totalMulti =multiply(multi3,c)[0];
 
 return [totalSum, totalMulti, `${a} and ${b} and ${c} sum to ${totalSum}.`, `The product of ${a} and ${b} and ${c} is ${totalMulti}.`];
+
 
  }
 // Here is the test for sumAndMultiply(); uncomment it to run it
