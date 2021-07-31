@@ -24,7 +24,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
 let totalMult = a*b ;
-return [totalMult ,`The product of ${5} and ${9} is 45.`];
+return [totalMult ,`The product of ${a} and ${b} is ${totalMult}.`];
 }
 
 // Here is the test for multiply(); uncomment it to run it
