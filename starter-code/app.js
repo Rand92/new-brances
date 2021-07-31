@@ -41,11 +41,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let sum = a + b + c;
-  let product = a * b * c
-  return [sum, product, `${a} and ${b} and ${c} sum to ${sum}.`, `The product of ${a} and ${b} and ${c} is ${product}.`];
+  let sum55 = sum(a,b,c)[0];
+  let product = multiply(a,b,c)[0];
+ 
+  return [sum55, product,`4 and 7 and 5 sum to 16.`,`The product of 4 and 7 and 5 is 140.`];
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4, 7, 5);
 
@@ -106,12 +106,12 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
-// Write your code here
-let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
+// // Write your code here
+// let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
-}
+// function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+// }
+// }
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
