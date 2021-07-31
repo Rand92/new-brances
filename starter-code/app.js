@@ -61,11 +61,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
-  let testArray = [2, 3, 4]; //eslint-disable-line
-  var sum1 = testArray.reduce(function (a, b) {
-    return a + b;
-  }, 0);
-  return [sum1 , "2,3,4 was passed in as an array of numbers, and 9 is their sum."];
+let sum0= sum(sumArr[0],sumArr[1])[0];
+let sum1 =sum(sum0,sumArr[2])[0] ;
+  return [sum1 , `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum1} is their sum.`];
 } 
 // Here is the test for sumArray(); uncomment it to run it
 
